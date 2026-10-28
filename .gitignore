@@ -1,0 +1,44 @@
+# Local credentials and environment settings
+.env
+.env.*
+!.env.example
+.credentials/
+secrets/
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+id_rsa
+id_rsa.pub
+id_ed25519
+id_ed25519.pub
+
+# Operating system and editor files
+.DS_Store
+Thumbs.db
+Desktop.ini
+.vscode/
+.idea/
+*.swp
+*.swo
+*.tmp
+*.bak
+*~
+
+# Dependencies, caches, and build output
+node_modules/
+dist/
+build/
+coverage/
+__pycache__/
+*.py[cod]
+*.log
+
+# Local FFmpeg / visual QA intermediates (keep the source illustration and final MP4)
+video/assets/check-frame.png
+video/assets/concat-list.txt
+video/assets/filtergraph.txt
+video/assets/segment-*.mp4
+video/assets/test-seg.avi
+video/assets/title-*.png

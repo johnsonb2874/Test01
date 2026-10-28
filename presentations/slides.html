@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0e3d3b">
+<title>台灣旅遊情報員｜旅行社行銷簡報</title>
+<style>
+:root{--ink:#123e3b;--paper:#f7f2e8;--coral:#ef6d55;--sun:#edc45c;--mint:#cde3d2;--blue:#91c7d5;--white:#fffdf8;--muted:#55716d;--shadow:0 24px 70px #092b2938}
+*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#102f2e;color:var(--ink);font-family:"Microsoft JhengHei","Noto Sans TC",system-ui,sans-serif}button{font:inherit;color:inherit}
+.deck{height:100dvh;display:flex;align-items:center;justify-content:center;padding:0 0 4.7rem;position:relative}.stage{width:min(100vw,177.78dvh);height:min(56.25vw,100dvh);aspect-ratio:16/9;position:relative;overflow:hidden;background:var(--paper);box-shadow:var(--shadow);container-type:inline-size}.slide{position:absolute;inset:0;display:none;padding:6.5% 7%;overflow:hidden;background:var(--paper)}.slide.active{display:flex;flex-direction:column;animation:enter .35s ease-out}.slide.dark{background:var(--ink);color:var(--paper)}.slide.coral{background:var(--coral);color:#fff9ef}.slide.blue{background:#d9edf0}.slide.sun{background:var(--sun)}.slide.mint{background:var(--mint)}
+@keyframes enter{from{opacity:.45;transform:translateX(1.5%)}to{opacity:1;transform:none}}
+.topline{display:flex;justify-content:space-between;align-items:center;text-transform:uppercase;letter-spacing:.12em;font-size:1.25cqw;font-weight:800;opacity:.76}.eyebrow{font-size:1.55cqw;letter-spacing:.16em;font-weight:800;text-transform:uppercase;color:var(--coral)}.dark .eyebrow,.coral .eyebrow{color:var(--sun)}h1,h2,p{margin:0}h1{font-size:6.1cqw;line-height:1.08;letter-spacing:-.045em;max-width:80%}h2{font-size:4.55cqw;line-height:1.12;letter-spacing:-.035em;max-width:86%}.subtitle{font-size:2.25cqw;line-height:1.45;color:var(--muted);max-width:62ch}.dark .subtitle,.coral .subtitle{color:#f3eee0}.hero{justify-content:center;gap:2.5cqw}.hero h1{font-size:6.7cqw;max-width:73%}.hero .subtitle{max-width:48ch}.hero-mark{font-size:1.5cqw;letter-spacing:.18em;font-weight:800;color:var(--sun)}.big-num{position:absolute;right:7%;bottom:10%;font-size:19cqw;line-height:.8;font-weight:900;opacity:.1;letter-spacing:-.1em}.decor{position:absolute;width:27cqw;height:27cqw;border-radius:50%;right:-8cqw;top:-9cqw;background:var(--sun);opacity:.88}.coral .decor{background:#123e3b}.dark .decor{background:var(--coral)}
+.row{display:grid;grid-template-columns:repeat(3,1fr);gap:3%;margin-top:auto}.tile{border-top:2px solid currentColor;padding:1.4cqw 0 0}.tile b{display:block;font-size:2cqw;line-height:1.3;margin-bottom:.55cqw}.tile p{font-size:1.55cqw;line-height:1.45;opacity:.83}.tile .tag{font-size:1.1cqw;letter-spacing:.1em;text-transform:uppercase;color:var(--coral);font-weight:800;margin-bottom:.8cqw}.dark .tile .tag,.coral .tile .tag{color:var(--sun)}.quote{font-size:3.5cqw;line-height:1.28;max-width:80%;font-weight:750;letter-spacing:-.02em}.split{display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:5%;height:100%}.split .right{display:flex;flex-direction:column;gap:1.25cqw}.pill{display:flex;align-items:center;gap:1cqw;font-size:2cqw;font-weight:800;padding:1.2cqw 0;border-bottom:1px solid #123e3b33}.pill span{font-size:1.1cqw;color:var(--coral);letter-spacing:.12em}.dark .pill{border-color:#ffffff35}.dark .pill span{color:var(--sun)}.foot{position:absolute;left:7%;right:7%;bottom:3.2%;display:flex;justify-content:space-between;gap:2%;font-size:1.03cqw;line-height:1.3;opacity:.78}.foot a{color:inherit;text-decoration:underline;text-underline-offset:2px}.foot .note{max-width:78%}.source-links{display:flex;flex-wrap:wrap;gap:.7em}.source-links a{white-space:nowrap}.cta{font-size:2cqw;font-weight:800;border:1px solid currentColor;border-radius:999px;padding:1.1cqw 1.8cqw;display:inline-block;margin-top:.4cqw}.controls{position:absolute;bottom:1rem;left:50%;transform:translateX(-50%);display:flex;align-items:center;gap:.65rem;color:#f7f2e8;z-index:5}.controls button{border:1px solid #f7f2e866;background:#173b39;border-radius:999px;padding:.55rem .9rem;cursor:pointer}.controls button:hover,.controls button:focus-visible{background:var(--coral);outline:2px solid white}.counter{min-width:5.2rem;text-align:center;font-size:.9rem;font-variant-numeric:tabular-nums}.progress{position:absolute;left:0;bottom:0;height:5px;background:var(--coral);width:0;transition:width .25s;z-index:4}.sr{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+@media(max-width:700px) and (orientation:portrait){.deck{padding:0 0 4.7rem}.stage{width:100vw;height:calc(100dvh - 5.2rem);aspect-ratio:auto}.slide{padding:10% 8%}.topline{font-size:3vw}.eyebrow{font-size:3.3vw}h1{font-size:10vw;max-width:100%}h2{font-size:8.1vw;max-width:100%}.hero h1{font-size:10.5vw;max-width:100%}.subtitle{font-size:4vw}.hero{gap:5vw}.hero-mark{font-size:3vw}.split{grid-template-columns:1fr;align-content:center;gap:5vh}.quote{font-size:7vw;max-width:100%}.split .right{gap:1vh}.pill{font-size:4.5vw;padding:2vh 0}.pill span{font-size:2.5vw}.row{grid-template-columns:1fr;gap:1.2vh;margin-top:5vh}.tile{padding:1vh 0 0}.tile b{font-size:4.6vw;margin-bottom:.2vh}.tile p{font-size:3.3vw;line-height:1.28}.tile .tag{font-size:2.4vw;margin-bottom:.3vh}.foot{left:8%;right:8%;bottom:2.4%;font-size:2.35vw}.foot .note{max-width:100%}.foot .source-links{display:none}.big-num{font-size:32vw;bottom:8%}.decor{width:40vw;height:40vw;right:-16vw;top:-14vw}.cta{font-size:4vw;padding:2vh 5vw}.controls{bottom:.65rem}.controls button{padding:.6rem .85rem}}
+@media(prefers-reduced-motion:reduce){.slide.active{animation:none}.progress{transition:none}}
+</style>
+</head>
+<body>
+<main class="deck" aria-label="旅行社行銷簡報">
+<div class="stage" id="stage" aria-live="polite">
+<section class="slide hero dark active" aria-label="第 1 張，共 8 張">
+<div class="decor"></div><div class="hero-mark">AI 台灣旅遊情報員</div>
+<h1>把旅遊情報<br>變成旅客願意<br>詢問的提案</h1>
+<p class="subtitle">旅行社行銷課程｜親子・情侶・熟齡旅遊</p>
+<div class="foot"><span class="note">研究資料查詢日 2026-10-28｜9 筆常態景點</span><span>01 / 08</span></div><div class="big-num">01</div>
+</section>
+<section class="slide blue" aria-label="第 2 張，共 8 張">
+<div class="decor"></div><div class="topline"><span>市場需求｜服務設計框架</span><span>02 / 08</span></div>
+<div class="split"><div><div class="eyebrow">先了解旅客</div><h2>旅客需要的，<br>是適合自己的<br>旅行節奏</h2><p class="subtitle" style="margin-top:2cqw">本頁整理服務提問方向，沒有引用市場統計。</p></div>
+<div class="right"><div class="pill"><span>01</span>誰同行？親子、伴侶或長輩</div><div class="pill"><span>02</span>想體驗什麼？自然、文化或遊樂</div><div class="pill"><span>03</span>哪些條件要先確認？日期、步行與預算</div></div></div>
+<div class="foot"><span class="note">需求分類為本簡報的服務設計建議，非市場調查結果。</span><span>無市場統計</span></div><div class="big-num">02</div>
+</section>
+<section class="slide sun" aria-label="第 3 張，共 8 張">
+<div class="topline"><span>親子旅遊</span><span>03 / 08</span></div><div class="eyebrow" style="margin-top:4%">讓孩子有得看，大人安排得動</div><h2 style="margin-top:1.2%">從孩子的興趣開始</h2>
+<div class="row"><div class="tile"><div class="tag">動物觀察</div><b>臺北市立動物園</b><p>保育教育・室內外展示<br>臺北市文山區</p></div><div class="tile"><div class="tag">遊具體驗</div><b>兒童新樂園</b><p>遊具與展演公告<br>臺北市士林區</p></div><div class="tile"><div class="tag">水生展示</div><b>Xpark</b><p>水生公園體驗<br>桃園市中壢區青埔</p></div></div>
+<div class="foot"><span class="note">客群適配為建議。營運、展演、適齡與票務請向場館確認。</span><span class="source-links"><a href="https://www.travel.taipei/en/attraction/details/537" target="_blank" rel="noopener">動物園 SRC-01</a><a href="https://www.tcap.taipei/" target="_blank" rel="noopener">兒童新樂園 SRC-03</a><a href="https://www.xpark.com.tw/visit" target="_blank" rel="noopener">Xpark SRC-05</a>｜查詢 2026-10-28</span></div><div class="big-num">03</div>
+</section>
+<section class="slide coral" aria-label="第 4 張，共 8 張">
+<div class="topline"><span>情侶旅遊</span><span>04 / 08</span></div><div class="eyebrow" style="margin-top:4%">先問風景偏好，再選旅行主題</div><h2 style="margin-top:1.2%">兩個人的旅行<br>從喜歡的風景開始</h2>
+<div class="row"><div class="tile"><div class="tag">湖景・自然</div><b>日月潭</b><p>高山湖泊、邵族文化與生態</p></div><div class="tile"><div class="tag">海岸・光影</div><b>旗津</b><p>海岸景觀、星空隧道</p></div><div class="tile"><div class="tag">城市景觀</div><b>臺北101</b><p>89 樓觀景台與城市全景</p></div></div>
+<div class="foot"><span class="note">約會適配為建議。活動日期、交通及營運資訊須另查。</span><span class="source-links"><a href="https://www.sunmoonlake.gov.tw/attractions/ArticlesFull?a=19" target="_blank" rel="noopener">日月潭 SRC-07</a><a href="https://khh.travel/zh-tw/attractions/detail/7/" target="_blank" rel="noopener">旗津 SRC-09</a><a href="https://www.taipei-101.com.tw/en/observatory" target="_blank" rel="noopener">臺北101 SRC-11</a>｜查詢 2026-10-28</span></div><div class="big-num">04</div>
+</section>
+<section class="slide mint" aria-label="第 5 張，共 8 張">
+<div class="topline"><span>熟齡旅遊</span><span>05 / 08</span></div><div class="eyebrow" style="margin-top:4%">先問移動需求，再挑景點</div><h2 style="margin-top:1.2%">熟齡推薦<br>從旅客的節奏出發</h2>
+<div class="row"><div class="tile"><div class="tag">動物與教育</div><b>臺北市立動物園</b><p>無障礙設施資訊可查<br>園區移動量待確認</p></div><div class="tile"><div class="tag">文化參觀</div><b>故宮北部院區</b><p>文物典藏與展覽<br>展區狀態待確認</p></div><div class="tile"><div class="tag">溫泉文化</div><b>新北投</b><p>溫泉區域介紹<br>個別設施條件待確認</p></div></div>
+<div class="foot"><span class="note">不以年齡推定體力或興趣。路線、設備狀態與健康適用性須個別確認。</span><span class="source-links"><a href="https://www.travel.taipei/en/attraction/details/537" target="_blank" rel="noopener">動物園 SRC-01</a><a href="https://www.npm.gov.tw/Articles.aspx?l=2&sno=02007001" target="_blank" rel="noopener">故宮 SRC-13</a><a href="https://eng.taiwan.net.tw/m1.aspx?id=4029&sno=0002090" target="_blank" rel="noopener">新北投 SRC-15</a>｜查詢 2026-10-28</span></div><div class="big-num">05</div>
+</section>
+<section class="slide dark" aria-label="第 6 張，共 8 張">
+<div class="decor"></div><div class="topline"><span>推薦方案｜服務提案</span><span>06 / 08</span></div><div class="eyebrow" style="margin-top:5%">三步形成旅遊提案</div><h2 style="margin-top:1.2%">偏好先行<br>資訊再查核</h2>
+<div class="row" style="margin-top:auto"><div class="tile"><div class="tag">第一步</div><b>了解偏好</b><p>同行者・興趣・步行需求<br>日期・預算</p></div><div class="tile"><div class="tag">第二步</div><b>配對候選</b><p>說明推薦理由<br>分清事實與建議</p></div><div class="tile"><div class="tag">第三步</div><b>查核細節</b><p>活動・票務・營運・交通<br>註記來源與查詢日</p></div></div>
+<div class="foot"><span class="note">這是依研究資料提出的服務流程，非已上線或已驗證的系統功能。</span><span>方案提案</span></div><div class="big-num">06</div>
+</section>
+<section class="slide blue" aria-label="第 7 張，共 8 張">
+<div class="topline"><span>旅行社的專業優勢</span><span>07 / 08</span></div><div class="eyebrow" style="margin-top:5%">可建立的服務標準｜提案</div><h2 style="margin-top:1.2%">把資訊查清楚<br>再把偏好變成行程</h2>
+<div class="row" style="margin-top:auto"><div class="tile"><div class="tag">資訊可信</div><b>來源留得住</b><p>重要事實標示來源與查詢日期<br>不確定就標待確認</p></div><div class="tile"><div class="tag">推薦有據</div><b>理由說得明</b><p>說清楚景點特色<br>適配旅客的部分標示為建議</p></div><div class="tile"><div class="tag">出發安心</div><b>時效再核對</b><p>出發前重查活動、營運<br>交通與票務</p></div></div>
+<div class="foot"><span class="note">上述為可建立的服務流程，不代表旅行社既有實績、保證或已完成能力。</span><span>專業流程提案</span></div><div class="big-num">07</div>
+</section>
+<section class="slide coral" aria-label="第 8 張，共 8 張">
+<div class="decor"></div><div class="topline"><span>諮詢行動</span><span>08 / 08</span></div><div class="hero-mark" style="margin-top:auto">開始規劃下一趟旅行</div><h2 style="font-size:6.4cqw;margin-top:2cqw">帶上旅行條件<br>和顧問聊聊</h2><p class="subtitle" style="margin-top:2cqw">預計日期　・　同行者　・　喜歡的體驗　・　行動需求</p><div class="cta">向旅行社提出旅遊諮詢</div>
+<div class="foot"><span class="note">先確認需求，再共同整理候選行程；報價、營運及活動資訊以查核結果為準。</span><span>下一步</span></div><div class="big-num">08</div>
+</section>
+<div class="progress" id="progress"></div>
+</div>
+<nav class="controls" aria-label="簡報控制"><button id="prev" aria-label="上一張">← 上一張</button><span class="counter" id="counter" aria-live="polite">1 / 8</span><button id="next" aria-label="下一張">下一張 →</button><button id="full" aria-label="全螢幕展示">全螢幕</button></nav>
+</main>
+<script>
+(()=>{const slides=[...document.querySelectorAll('.slide')],counter=document.getElementById('counter'),progress=document.getElementById('progress');let i=0;function show(n){i=(n+slides.length)%slides.length;slides.forEach((s,j)=>{s.classList.toggle('active',j===i);s.setAttribute('aria-hidden',j!==i)});counter.textContent=`${i+1} / ${slides.length}`;progress.style.width=`${((i+1)/slides.length)*100}%`;document.title=`${i+1}/8｜台灣旅遊情報員`}function next(){show(i+1)}function prev(){show(i-1)}document.getElementById('next').onclick=next;document.getElementById('prev').onclick=prev;document.getElementById('full').onclick=async()=>{try{if(!document.fullscreenElement)await document.getElementById('stage').requestFullscreen();else await document.exitFullscreen()}catch(e){document.getElementById('full').textContent='全螢幕不可用'}};window.addEventListener('keydown',e=>{if(['ArrowRight',' ','PageDown'].includes(e.key)){e.preventDefault();next()}if(['ArrowLeft','PageUp'].includes(e.key)){e.preventDefault();prev()}if(e.key==='Home')show(0);if(e.key==='End')show(slides.length-1);if(e.key==='Escape'&&document.fullscreenElement)document.exitFullscreen()});let touchX=null;document.getElementById('stage').addEventListener('touchstart',e=>touchX=e.changedTouches[0].screenX,{passive:true});document.getElementById('stage').addEventListener('touchend',e=>{if(touchX===null)return;const dx=e.changedTouches[0].screenX-touchX;if(Math.abs(dx)>50)(dx<0?next:prev)();touchX=null},{passive:true});show(0)})();
+</script>
+</body>
+</html>

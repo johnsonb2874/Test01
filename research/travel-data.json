@@ -1,0 +1,298 @@
+{
+  "dataset_id": "taiwan-travel-research-20261028-v1",
+  "dataset_name": "台灣親子、情侶與熟齡旅遊景點情報",
+  "researched_at": "2026-10-28",
+  "language": "zh-TW",
+  "data_status_legend": {
+    "已驗證": "來源頁面可核實景點名稱、地區及所列特色；適合客群屬研究員建議，不代表官方認證。",
+    "待確認": "目前來源不足以核實欄位，或活動日期等時效資訊尚未有可用官方公告。",
+    "模擬資料": "虛構示範資料，絕非實際景點、旅客、活動或報價。"
+  },
+  "records": [
+    {
+      "id": "TW-ATT-0001",
+      "name": "臺北市立動物園",
+      "region": "臺北市文山區",
+      "type": "景點",
+      "highlights": [
+        "動物保育與環境教育",
+        "室內展示館與戶外動物展示區"
+      ],
+      "recommended_audiences": [
+        "親子",
+        "熟齡"
+      ],
+      "audience_fit_basis": "研究員建議：官方頁面列有家庭活動、無障礙設施及多種展示區；適合度為依旅客需求所作的推薦，不是官方認證。",
+      "activity_dates": null,
+      "activity_dates_note": "常態景點，非特定期間活動；如要參加園區特別活動，日期待確認。",
+      "data_status": "已驗證",
+      "source_ids": [
+        "SRC-01",
+        "SRC-02"
+      ],
+      "queried_at": "2026-10-28",
+      "notes": "此筆只整理景點基本特色，不包含票價、營業時間或交通班次。",
+      "weather_suitability": {
+        "status": "部分室內",
+        "evidence": "研究資料列有室內展示館與戶外動物展示區；僅能說明有部分室內設施，不能推定全程遮雨或當日開放。",
+        "source_ids": [
+          "SRC-01",
+          "SRC-02"
+        ],
+        "queried_at": "2026-10-28",
+        "limitations": "室內外區域皆有；室內範圍、路徑、設施狀態及雨天營運待確認。"
+      }
+    },
+    {
+      "id": "TW-ATT-0002",
+      "name": "臺北市立兒童新樂園",
+      "region": "臺北市士林區",
+      "type": "景點",
+      "highlights": [
+        "兒童遊樂園區",
+        "官網提供遊具、展演及營運公告資訊"
+      ],
+      "recommended_audiences": [
+        "親子"
+      ],
+      "audience_fit_basis": "研究員建議：依兒童遊樂設施與親子共遊需求推薦；適合度為研究員判斷。",
+      "activity_dates": null,
+      "activity_dates_note": "常態景點，非特定期間活動；園區展演及營運日期依官方最新公告另行確認。",
+      "data_status": "已驗證",
+      "source_ids": [
+        "SRC-03",
+        "SRC-04"
+      ],
+      "queried_at": "2026-10-28",
+      "notes": "此筆不推定任何特定展演仍在舉辦。",
+      "weather_suitability": {
+        "status": "待確認",
+        "evidence": null,
+        "source_ids": [],
+        "queried_at": null,
+        "limitations": "本筆既有資料未核實雨天／室內條件；不可宣稱適合雨天。"
+      }
+    },
+    {
+      "id": "TW-ATT-0003",
+      "name": "Xpark",
+      "region": "桃園市中壢區青埔",
+      "type": "景點",
+      "highlights": [
+        "都會型水生公園／水族館體驗",
+        "官方提供場館位置及參觀資訊"
+      ],
+      "recommended_audiences": [
+        "親子",
+        "情侶"
+      ],
+      "audience_fit_basis": "研究員建議：以室內水生展示作為親子共遊或約會提案方向；個別展區、營運與適合年齡仍應以場館最新公告確認。",
+      "activity_dates": null,
+      "activity_dates_note": "常態景點，非特定期間活動；特展或限定活動日期待確認。",
+      "data_status": "已驗證",
+      "source_ids": [
+        "SRC-05",
+        "SRC-06"
+      ],
+      "queried_at": "2026-10-28",
+      "notes": "不收錄票價、營業時間或交通所需時間。",
+      "weather_suitability": {
+        "status": "待確認",
+        "evidence": null,
+        "source_ids": [],
+        "queried_at": null,
+        "limitations": "本筆既有資料未核實雨天／室內條件；不可宣稱適合雨天。"
+      }
+    },
+    {
+      "id": "TW-ATT-0004",
+      "name": "日月潭國家風景區",
+      "region": "南投縣魚池鄉及周邊",
+      "type": "景點",
+      "highlights": [
+        "高山湖泊景觀",
+        "原住民族文化與自然生態",
+        "周邊有多處景點與遊憩活動"
+      ],
+      "recommended_audiences": [
+        "情侶",
+        "熟齡",
+        "親子"
+      ],
+      "audience_fit_basis": "研究員建議：湖景與文化、生態主題可依不同步行量及旅遊節奏安排；無障礙與個別活動資訊須另行查核。",
+      "activity_dates": null,
+      "activity_dates_note": "常態景點；景區年度活動另有各自日期，這筆不代表任何活動日期。",
+      "data_status": "已驗證",
+      "source_ids": [
+        "SRC-07",
+        "SRC-08"
+      ],
+      "queried_at": "2026-10-28",
+      "notes": "交通、船班、自行車租借及活動日期不在本筆核實範圍。",
+      "weather_suitability": {
+        "status": "待確認",
+        "evidence": null,
+        "source_ids": [],
+        "queried_at": null,
+        "limitations": "本筆既有資料未核實雨天／室內條件；不可宣稱適合雨天。"
+      }
+    },
+    {
+      "id": "TW-ATT-0005",
+      "name": "旗津海水浴場",
+      "region": "高雄市旗津區",
+      "type": "景點",
+      "highlights": [
+        "海岸景觀",
+        "觀海步道及自然生態休憩空間",
+        "天候不佳時可能不開放"
+      ],
+      "recommended_audiences": [
+        "親子",
+        "情侶"
+      ],
+      "audience_fit_basis": "研究員建議：海岸景觀可作為家庭休憩或伴侶看海行程；是否適合下水須依天候、安全公告及旅客狀況判斷。",
+      "activity_dates": null,
+      "activity_dates_note": "常態景點，非特定期間活動；相關節慶日期另待主辦單位公告。",
+      "data_status": "已驗證",
+      "source_ids": [
+        "SRC-09"
+      ],
+      "queried_at": "2026-10-28",
+      "notes": "官方頁面指出入口廣場與步道有工程改道資訊，出發前須再次核對公告；本資料不推估工程進度。",
+      "weather_suitability": {
+        "status": "待確認",
+        "evidence": null,
+        "source_ids": [],
+        "queried_at": null,
+        "limitations": "本筆既有資料未核實雨天／室內條件；不可宣稱適合雨天。"
+      }
+    },
+    {
+      "id": "TW-ATT-0006",
+      "name": "旗津星空隧道",
+      "region": "高雄市旗津區",
+      "type": "景點",
+      "highlights": [
+        "隧道內有星空意象光影設計",
+        "連結旗津海景觀光自行車道"
+      ],
+      "recommended_audiences": [
+        "情侶",
+        "親子"
+      ],
+      "audience_fit_basis": "研究員建議：光影與星座主題適合安排散步、拍照或家庭探索；步行與自行車使用條件應依現場公告確認。",
+      "activity_dates": null,
+      "activity_dates_note": "常態景點，非特定期間活動。",
+      "data_status": "已驗證",
+      "source_ids": [
+        "SRC-10"
+      ],
+      "queried_at": "2026-10-28",
+      "notes": "來源為旗津區公所旅遊介紹；未核實當日開放或施工狀態。",
+      "weather_suitability": {
+        "status": "待確認",
+        "evidence": null,
+        "source_ids": [],
+        "queried_at": null,
+        "limitations": "本筆既有資料未核實雨天／室內條件；不可宣稱適合雨天。"
+      }
+    },
+    {
+      "id": "TW-ATT-0007",
+      "name": "臺北101觀景台",
+      "region": "臺北市信義區",
+      "type": "景點",
+      "highlights": [
+        "89樓室內觀景台，可眺望臺北市景",
+        "官方介紹有360度景觀與阻尼器展示"
+      ],
+      "recommended_audiences": [
+        "情侶",
+        "熟齡"
+      ],
+      "audience_fit_basis": "研究員建議：城市景觀可作為約會或低體力行程的提案選項；實際舒適度依人潮、天候及個人需求而異。",
+      "activity_dates": null,
+      "activity_dates_note": "常態景點，非特定期間活動；戶外觀景區可能受天候影響。",
+      "data_status": "已驗證",
+      "source_ids": [
+        "SRC-11",
+        "SRC-12"
+      ],
+      "queried_at": "2026-10-28",
+      "notes": "此筆不收錄票價、營業時間或活動日期。",
+      "weather_suitability": {
+        "status": "室內",
+        "evidence": "研究資料列有 89 樓室內觀景台。",
+        "source_ids": [
+          "SRC-11"
+        ],
+        "queried_at": "2026-10-28",
+        "limitations": "僅指觀景台室內；前往動線、戶外設施、天候影響及當日營運待確認。"
+      }
+    },
+    {
+      "id": "TW-ATT-0008",
+      "name": "國立故宮博物院（北部院區）",
+      "region": "臺北市士林區",
+      "type": "景點",
+      "highlights": [
+        "中國歷史文物與藝術典藏展示",
+        "官方設有兒童學藝中心及無障礙服務資訊"
+      ],
+      "recommended_audiences": [
+        "熟齡",
+        "親子",
+        "情侶"
+      ],
+      "audience_fit_basis": "研究員建議：可依文化參觀興趣安排；兒童展區及無障礙服務資訊有官方頁面，但實際開放區域須按當日公告確認。",
+      "activity_dates": null,
+      "activity_dates_note": "常態博物館景點，非特定期間活動；特展日期請查院方最新展覽公告。",
+      "data_status": "已驗證",
+      "source_ids": [
+        "SRC-13",
+        "SRC-14"
+      ],
+      "queried_at": "2026-10-28",
+      "notes": "使用院方官方參觀頁；不將營運時間或票價複製到本研究資料。",
+      "weather_suitability": {
+        "status": "待確認",
+        "evidence": null,
+        "source_ids": [],
+        "queried_at": null,
+        "limitations": "本筆既有資料未核實雨天／室內條件；不可宣稱適合雨天。"
+      }
+    },
+    {
+      "id": "TW-ATT-0009",
+      "name": "新北投溫泉區",
+      "region": "臺北市北投區",
+      "type": "景點／區域遊程",
+      "highlights": [
+        "溫泉文化與地熱景觀",
+        "周邊有北投公園及溫泉相關文化設施"
+      ],
+      "recommended_audiences": [
+        "熟齡",
+        "情侶"
+      ],
+      "audience_fit_basis": "研究員建議：可規劃溫泉文化與散步型行程；泡湯設施的無障礙、健康適用性、費用及營運狀態均須個別確認。",
+      "activity_dates": null,
+      "activity_dates_note": "常態景點區域，非特定期間活動；溫泉季等活動日期待官方另行確認。",
+      "data_status": "已驗證",
+      "source_ids": [
+        "SRC-15",
+        "SRC-16"
+      ],
+      "queried_at": "2026-10-28",
+      "notes": "不把整個區域的設施狀態概括成一致；規劃前應查核各設施公告。",
+      "weather_suitability": {
+        "status": "待確認",
+        "evidence": null,
+        "source_ids": [],
+        "queried_at": null,
+        "limitations": "本筆既有資料未核實雨天／室內條件；不可宣稱適合雨天。"
+      }
+    }
+  ]
+}
